@@ -692,7 +692,7 @@
     
             addToCartButton.addEventListener('click', () => {
                 const itemName = modalItemName.textContent;
-                const itemPrice = parseFloat(modalItemPrice.textContent.replace('Price: $', ''));
+                const itemPrice = parseFloat(modalItemPrice.textContent.replace('Price: ₦', ''));
                 const item = { name: itemName, price: itemPrice, quantity: currentQty };
                 cart.push(item);
                 itemModal.style.display = 'none';
