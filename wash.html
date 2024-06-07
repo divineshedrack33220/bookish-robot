@@ -616,7 +616,7 @@
             <span class="close">&times;</span>
             <h2>Order Summary</h2>
             <div id="orderSummary"></div>
-            <h3>Total: $<span id="totalPrice">0.00</span></h3>
+            <h3>Total: ₦<span id="totalPrice">0.00</span></h3>
             <div class="modal-footer">
                 <button id="proceedToPayment">Pay</button>
             </div>
@@ -692,7 +692,7 @@
     
             addToCartButton.addEventListener('click', () => {
                 const itemName = modalItemName.textContent;
-                const itemPrice = parseFloat(modalItemPrice.textContent.replace('Price: ₦', ''));
+                const itemPrice = parseFloat(modalItemPrice.textContent.replace('Price: $', ''));
                 const item = { name: itemName, price: itemPrice, quantity: currentQty };
                 cart.push(item);
                 itemModal.style.display = 'none';
